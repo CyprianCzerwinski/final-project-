@@ -1,0 +1,627 @@
+{
+	"info": {
+		"_postman_id": "b0192790-4eb0-4467-8121-362a077985b8",
+		"name": "Final project SDA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CRUD Example Board,",
+			"item": [
+				{
+					"name": "Create a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"const response = pm.response.json();\r",
+									"pm.collectionVariables.set(\"board\",response.id);\r",
+									"\r",
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"new Board has been created\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/boards/?name=SDA_Final Project&key=04922c5edac0e25521c0ce1f475e7776&token=4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed&desc=Trello API test table ",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "SDA_Final Project"
+								},
+								{
+									"key": "key",
+									"value": "04922c5edac0e25521c0ce1f475e7776"
+								},
+								{
+									"key": "token",
+									"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed"
+								},
+								{
+									"key": "desc",
+									"value": "Trello API test table "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Showing list of tables",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"\r",
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/members/me/boards?key=04922c5edac0e25521c0ce1f475e7776&token=4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "04922c5edac0e25521c0ce1f475e7776"
+								},
+								{
+									"key": "token",
+									"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a List on a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();\r",
+									"pm.collectionVariables.set(\"list\",response.id);\r",
+									"\r",
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"new List has been created\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/boards/{{board}}/lists?key=04922c5edac0e25521c0ce1f475e7776&token=4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed&name=during tests",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"boards",
+								"{{board}}",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "04922c5edac0e25521c0ce1f475e7776"
+								},
+								{
+									"key": "token",
+									"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed"
+								},
+								{
+									"key": "name",
+									"value": "during tests",
+									"description": "in progress"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Lists on a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/boards/{{board}}/lists?key=04922c5edac0e25521c0ce1f475e7776&token=4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"boards",
+								"{{board}}",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "04922c5edac0e25521c0ce1f475e7776"
+								},
+								{
+									"key": "token",
+									"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"const response = pm.response.json();\r",
+									"pm.collectionVariables.set(\"id\",response.id);\r",
+									"\r",
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"new Card has been created\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}cards?idList={{list}}&key={{key}}&token={{token}}&name=some very important issue",
+							"host": [
+								"{{baseURL}}cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "{{list}}"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "some very important issue"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards on a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}boards/{{board}}/cards/?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}boards"
+							],
+							"path": [
+								"{{board}}",
+								"cards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}cards/{{id}}?key={{key}}&token={{token}}&name=new issue&desc=testing",
+							"host": [
+								"{{baseURL}}cards"
+							],
+							"path": [
+								"{{id}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "new issue"
+								},
+								{
+									"key": "desc",
+									"value": "testing"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards on a Board Updated Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}boards/{{board}}/cards/?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}boards"
+							],
+							"path": [
+								"{{board}}",
+								"cards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}cards/{{id}}?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}cards"
+							],
+							"path": [
+								"{{id}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "new issue",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards on a Board Delated",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}boards/{{board}}/cards/?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}boards"
+							],
+							"path": [
+								"{{board}}",
+								"cards",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Is status code = 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/boards/{{board}}/?key=04922c5edac0e25521c0ce1f475e7776&token=4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"boards",
+								"{{board}}",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "04922c5edac0e25521c0ce1f475e7776"
+								},
+								{
+									"key": "token",
+									"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://api.trello.com/1",
+			"type": "string"
+		},
+		{
+			"key": "orderId",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "Id",
+			"value": "",
+			"disabled": true
+		},
+		{
+			"key": "key",
+			"value": "04922c5edac0e25521c0ce1f475e7776",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "4d205861d8495f2ddb1aa105e95da51b41975dde505ff61a061f7a790c7618ed",
+			"type": "string"
+		},
+		{
+			"key": "id",
+			"value": ""
+		},
+		{
+			"key": "board",
+			"value": ""
+		},
+		{
+			"key": "List",
+			"value": ""
+		},
+		{
+			"key": "list",
+			"value": ""
+		},
+		{
+			"key": "boar",
+			"value": ""
+		}
+	]
+}
