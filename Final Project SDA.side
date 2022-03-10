@@ -1,0 +1,186 @@
+{
+  "id": "efe6d777-1b72-4436-8955-2aa865471aac",
+  "version": "2.0",
+  "name": "Final Project SDA",
+  "url": "https://trello.com",
+  "tests": [{
+    "id": "fb1fcfe6-298c-4b98-a0ef-d97ec41eb98b",
+    "name": "CRUD Example Board",
+    "commands": [{
+      "id": "9990ab54-0a05-4ce3-9cb5-95a504fbbbbb",
+      "comment": "",
+      "command": "open",
+      "target": "/cyprianczerwinski/boards",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94066092-9147-4384-8990-7b204535a136",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a0792a2-b848-4a2e-89d9-25d5ecef4499",
+      "comment": "",
+      "command": "click",
+      "target": "css=.boards-page-board-section:nth-child(4) p > span",
+      "targets": [
+        ["css=.boards-page-board-section:nth-child(4) p > span", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/div/div/div[2]/div/div/div/div[3]/div[3]/div[2]/ul/li[3]/div/p/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/ul/li[3]/div/p/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a46d52be-4a0a-46be-ac24-74d7ecfe0cf1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.nch-textfield__input",
+      "targets": [
+        ["css=.nch-textfield__input", "css:finder"],
+        ["xpath=//input[@value='testowa tablica']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "testowa tablica"
+    }, {
+      "id": "5c667ca5-53c6-49cf-b1a1-8f20ab00b615",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.nch-textfield__input",
+      "targets": [
+        ["css=.nch-textfield__input", "css:finder"],
+        ["xpath=//input[@value='testowa tablica']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "70c5fb8c-274f-4d4a-9ac5-950660f85e4b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6172162-935f-4f87-92b2-51b2a2133996",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.list-name-input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='board']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "testowa lista"
+    }, {
+      "id": "8a8ee590-e03d-4483-ae7f-a0fc20dd5546",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=.list-name-input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='board']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ca018b46-6594-4f74-a210-fe4515339f10",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba5c0f6b-f4a6-40dd-9eab-3d27c1f231c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mod-show-menu > .icon-sm",
+      "targets": [
+        ["css=.mod-show-menu > .icon-sm", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/div[5]/a[3]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51faf01f-da23-4dd3-a7a2-5efaa2cff8c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Więcej",
+      "targets": [
+        ["linkText=Więcej", "linkText"],
+        ["css=.js-open-more", "css:finder"],
+        ["xpath=//a[contains(text(),'Więcej')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/div[2]/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[18]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Więcej')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f09c3d75-1a20-4dfe-86ec-96fd61057cbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zamknij tablicę...",
+      "targets": [
+        ["linkText=Zamknij tablicę...", "linkText"],
+        ["css=.js-close-board", "css:finder"],
+        ["xpath=//a[contains(text(),'Zamknij tablicę...')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div/div[2]/div/div/div[2]/div/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[22]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Zamknij tablicę...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c8ff833-817a-4c2e-8d7f-7f53fa9fcda5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-confirm",
+      "targets": [
+        ["css=.js-confirm", "css:finder"],
+        ["xpath=//input[@value='Zamknij']", "xpath:attributes"],
+        ["xpath=//div[@id='chrome-container']/div[4]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4e87b62-ebaf-4af3-973e-4452d452ef7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_3ZZkvSn-U9BxDK",
+      "targets": [
+        ["css=.\\_3ZZkvSn-U9BxDK", "css:finder"],
+        ["xpath=(//button[@type='button'])[16]", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Trwale usuń tablicę')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f54bbf54-3f98-4aa1-9d0e-6dcb667e36ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_4rSLRU_itQllPh",
+      "targets": [
+        ["css=.\\_4rSLRU_itQllPh", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//section/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Usuń')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "90ab9932-b66e-48ce-a8a4-5b6e7f34c746",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://trello.com/"],
+  "plugins": []
+}
