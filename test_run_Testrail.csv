@@ -1,0 +1,121 @@
+﻿"ID","Title","Assigned To","Automation Type","Case ID","Comment","Defects","Elapsed","Estimate","Expected Result","Forecast","Goals","In Progress","Mission","Plan","Plan ID","Preconditions","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Section Hierarchy","Status","Steps","Steps","Steps","Steps (Actual Result)","Steps (Additional Info)","Steps (Expected Result)","Steps (Expected Result)","Steps (References)","Steps (Shared step ID)","Steps (Status)","Steps (Step)","Steps (Step)","Template","Tested By","Tested On","Type","Version"
+"T1","Czy obok sekcji “Przestrzenie robocze“ znajduje się symbol “+“","Cyprian Czerwiński"," None","C1","","none","","","","","","","","","","użytkownik znajduje się na stronie: https://trello.com/cyprianczerwinski/boards
+użytkownik jest zalogowany jako administrator
+
+środowisko:
+System: Windows 11 Home 64
+Przeglądarka: Chrome Wersja 99.0.4844.51
+
+","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Passed","","1. na dole sekcji tablice, obok treści ""Przestrzenie robocze"", znajduje się symbol ""+""","na dole sekcji tablice, obok treści ""Przestrzenie robocze"", znajduje się symbol ""+"" 
+---
+Passed","","","na dole sekcji tablice, obok treści "Przestrzenie robocze", znajduje się symbol "+" ","","","","","","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:12 PM","Functional","1.0"
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"T2","Czy po naciśnięciu na symbol “+“  pojawia się okno dialogowe: “stwórzmy przestrzeń roboczą”","Cyprian Czerwiński","","C2","","","","","","","","","","","","środowisko:
+
+System: Windows 11 Home 64
+
+Przeglądarka: Chrome Wersja 99.0.4844.51
+Wykonano krok C1","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Passed","","1. Należy najechać kursorem na znak ""+"" znajdujący się w lewym menu, pod listą ""Tablice"" 
+Expected Result:
+Symbol ""+"" powinien zostać podświetlony
+2. Należy wcisnąć symbol ""+""
+Expected Result:
+Zostajemy przekierowani do okna ""Stwórzmy nową przestrzeń roboczą""","Należy najechać kursorem na znak ""+"" znajdujący się w lewym menu, pod listą ""Tablice"" 
+---
+Symbol ""+"" powinien zostać podświetlony
+---
+Passed
+Należy wcisnąć symbol ""+""
+---
+Zostajemy przekierowani do okna ""Stwórzmy nową przestrzeń roboczą""
+---
+Passed","","","Symbol "+" powinien zostać podświetlony","","","","","Należy najechać kursorem na znak "+" znajdujący się w lewym menu, pod listą "Tablice" ","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:12 PM","Other",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Zostajemy przekierowani do okna "Stwórzmy nową przestrzeń roboczą"","","","","","Należy wcisnąć symbol "+"","","","","","",""
+"T3","Czy w oknie ""Stwórzmy Przestrzeń Roboczą"" znajduje się pole ""Nazwa Przestrzeni Roboczej""","Cyprian Czerwiński"," None","C3","","","","","","","","","","","","środowisko:
+System: Windows 11 Home 64
+Przeglądarka: Chrome Wersja 99.0.4844.51
+
+Należy zrealizować bezpośrednio po wykonaniu przypadku C2","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Passed","","1. Pole ""Nazwa Przestrzeni Roboczej"" powinno znajdować się w górnej części formularza
+Expected Result:
+Pole ""Nazwa Przestrzeni Roboczej""  znajduje się w górnej części formularza","Pole ""Nazwa Przestrzeni Roboczej"" powinno znajdować się w górnej części formularza
+---
+Pole ""Nazwa Przestrzeni Roboczej""  znajduje się w górnej części formularza
+---
+Passed","","","Pole "Nazwa Przestrzeni Roboczej"  znajduje się w górnej części formularza","","","","","Pole "Nazwa Przestrzeni Roboczej" powinno znajdować się w górnej części formularza","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:12 PM","Other",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"T4","Czy w oknie ""Stwórzmy Przestrzeń Roboczą"", w oknie ""Stwórzmy przestrzeń roboczą"" znajduje się pole ""Typ Przestrzeni roboczej""","Cyprian Czerwiński"," None","C4","","","","","","","","","","","","środowisko:
+System: Windows 11 Home 64
+Przeglądarka: Chrome Wersja 99.0.4844.51
+
+Należy zrealizować bezpośrednio po wykonaniu przypadku C2","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Passed","","1. Pole ""Typ Przestrzeni roboczej"" powinno znajdować się w środkowej części formularza
+
+
+Expected Result:
+Pole ""Typ Przestrzeni roboczej""  znajduje się w środkowej części formularza","Pole ""Typ Przestrzeni roboczej"" powinno znajdować się w środkowej części formularza
+
+
+---
+Pole ""Typ Przestrzeni roboczej""  znajduje się w środkowej części formularza
+
+
+---
+Passed","","","Pole "Typ Przestrzeni roboczej"  znajduje się w środkowej części formularza
+
+","","","","","Pole "Typ Przestrzeni roboczej" powinno znajdować się w środkowej części formularza
+
+","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:12 PM","Other",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""
+"T5","Czy po wybraniu pola “Typ Przestrzeni roboczej“, w oknie ""Stwórzmy przestrzeń roboczą"" rozwija się lista rozwijana","Cyprian Czerwiński","","C5","","","","","","","","","","","","środowisko:
+System: Windows 11 Home 64
+Przeglądarka: Chrome Wersja 99.0.4844.51
+
+Należy zrealizować bezpośrednio po wykonaniu przypadku C2","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Passed","","1. Należy przesunąć kursor na pole ""Typ Przestrzeni roboczej"", znajdujące się w środkowej części formularza
+Expected Result:
+Kursor znajduje się na polu ""Typ przestrzeni roboczej""
+2. Należy kliknąć na pole ""Typ Przestrzeni roboczej""
+Expected Result:
+Powinna rozwinąć się lista rozwijana","Należy przesunąć kursor na pole ""Typ Przestrzeni roboczej"", znajdujące się w środkowej części formularza
+---
+Kursor znajduje się na polu ""Typ przestrzeni roboczej""
+---
+Passed
+Należy kliknąć na pole ""Typ Przestrzeni roboczej""
+---
+Powinna rozwinąć się lista rozwijana
+---
+Passed","","","Kursor znajduje się na polu "Typ przestrzeni roboczej"","","","","","Należy przesunąć kursor na pole "Typ Przestrzeni roboczej", znajdujące się w środkowej części formularza","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:13 PM","Other",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Powinna rozwinąć się lista rozwijana","","","","","Należy kliknąć na pole "Typ Przestrzeni roboczej"","","","","","",""
+"T6","czy wypełnienie pola ""Opis Przestrzeni roboczej“, w oknie ""Stwórzmy przestrzeń roboczą"" jest obligatoryjne","Cyprian Czerwiński","","C6","","","","","","","","","","","","środowisko:
+System: Windows 11 Home 64
+Przeglądarka: Chrome Wersja 99.0.4844.51
+
+Należy zrealizować bezpośrednio po wykonaniu przypadku C2
+","Medium","https://cyprianczerwinski.atlassian.net/wiki/spaces/TEAM/pages/688141/cc+us+002+Tworzenie+Przestrzeni+Roboczej","Test Run 3/13/2022","","R1","Test Cases","0","","Test Cases","Failed","","1. Należy wypełnić pole ""Nazwa przestrzeni roboczej"" dowolnym tekstem (do 100znaków)
+Expected Result:
+Pole zostało wypełnione tekstem
+2. z listy rozwijanej znajdującej się pod polem ""Typ Przestrzeni roboczej"" należy wybrać dowolny typ
+Expected Result:
+Wybrany typ wyświetla się w polu ""Typ Przestrzeni roboczej""
+
+3. Należy wybrać przycisk ""Kontynuuj"", na dole formularza
+Expected Result:
+Przycisk nie podświetla się na niebiesko a jego naciśnięcie nie powoduje żadnej reakcji","Należy wypełnić pole ""Nazwa przestrzeni roboczej"" dowolnym tekstem (do 100znaków)
+---
+Pole zostało wypełnione tekstem
+---
+Passed
+z listy rozwijanej znajdującej się pod polem ""Typ Przestrzeni roboczej"" należy wybrać dowolny typ
+---
+Wybrany typ wyświetla się w polu ""Typ Przestrzeni roboczej""
+
+---
+Passed
+Należy wybrać przycisk ""Kontynuuj"", na dole formularza
+---
+Przycisk nie podświetla się na niebiesko a jego naciśnięcie nie powoduje żadnej reakcji 
+---
+Przycisk podświetla się na niebiesko a jego naciśnięcie powoduje przeniesienie do okna ""Zaproś Zespół""
+---
+Failed","","","Pole zostało wypełnione tekstem","","","","","Należy wypełnić pole "Nazwa przestrzeni roboczej" dowolnym tekstem (do 100znaków)","","Test Case (Steps)","Cyprian Czerwiński","3/13/2022 6:15 PM","Other",""
+"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","Wybrany typ wyświetla się w polu "Typ Przestrzeni roboczej"
+","","","","","z listy rozwijanej znajdującej się pod polem "Typ Przestrzeni roboczej" należy wybrać dowolny typ","","","","","",""
