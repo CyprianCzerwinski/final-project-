@@ -6,7 +6,7 @@ Na projekt końcowy z zakresu Tester Oprogramowania skąłdają się następują
 *Kolekcja z przykładowym testem CRUD w aplikacji Trello. 
 Po zaimportowaniu kolekcji z pliku należy podmienić wartości zmiennych kolekcji {{key}} i {{token}} na wartości wygenerowane na stronie https://trello.com/app-key .
 
-2. Dodawanie tablicy w Trello, dodawanie listy i usówanie tablicy. Nagranie Selenium IDE (Final Project SDA.side i CRUDExampleBoardTest.java
+2. Dodawanie tablicy w Trello, dodawanie listy i usuwanie tablicy. Nagranie Selenium IDE (Final Project SDA.side i CRUDExampleBoardTest.java
 
 3. Zip "BDD_Cucumber-Java_Trello_FinalProject.zip" z projektem InteliJ. Scenariusze i automatyzacja oparta na wcześniejszym nagraniu z Selenium IDE. 
 
