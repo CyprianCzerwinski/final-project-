@@ -14,4 +14,6 @@ Po zaimportowaniu kolekcji z pliku należy podmienić wartości zmiennych kolekc
 
 5. Test run z programu Testrail test_run_Testrail.csv.
 
-6. Raport błędu z programu Jira zgłoszenie_błędu_Jira.doc. 
+6. Raport błędu z programu Jira zgłoszenie_błędu_Jira.doc.
+
+7. Raport z testu eksploracyjnego. 
