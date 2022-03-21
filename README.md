@@ -1,4 +1,4 @@
-# final-project-
+# final-project
 
 Na projekt końcowy z zakresu Tester Oprogramowania skąłdają się następujące elementy, dostępne w bierzącym folderze. 
 
